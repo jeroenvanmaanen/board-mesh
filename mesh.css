@@ -1,0 +1,56 @@
+.tile {
+    width: 40px;
+    height: 30px;
+    border: gray 2px solid;
+    display: inline-block;
+    margin: 2px;
+}
+.half-tile {
+    width: 14px;
+    height: 30px;
+    border: white 2px solid;
+    display: inline-block;
+    margin: 2px;
+}
+.arrow-e {
+    background: url("img/arrow-e.png") no-repeat 6px 1px;
+    background-size: 30px 30px;
+}
+.arrow-nne {
+    background: url("img/arrow-nne.png") no-repeat 6px -1px;
+    background-size: 30px 30px;
+}
+.arrow-nnw {
+    background: url("img/arrow-nnw.png") no-repeat 4px -1px;
+    background-size: 30px 30px;
+}
+.arrow-w {
+    background: url("img/arrow-w.png") no-repeat 4px 1px;
+    background-size: 30px 30px;
+}
+.arrow-ssw {
+    background: url("img/arrow-ssw.png") no-repeat 4px 2px;
+    background-size: 30px 30px;
+}
+.arrow-sse {
+    background: url("img/arrow-sse.png") no-repeat 6px 2px;
+    background-size: 30px 30px;
+}
+.actor-a {
+    background-color: red;
+}
+.actor-b {
+    background-color: royalblue;
+}
+.actor-c {
+    background-color: limegreen;
+}
+.actor-d {
+    background-color: cyan;
+}
+.actor-e {
+    background-color: magenta;
+}
+.actor-f {
+    background-color: yellow;
+}
