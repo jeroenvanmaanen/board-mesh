@@ -12,6 +12,9 @@
     display: inline-block;
     margin: 2px;
 }
+.mark {
+    border: darkred 2px solid !important;
+}
 .arrow-e {
     background: url("img/arrow-e.png") no-repeat 6px 1px;
     background-size: 30px 30px;
