@@ -1,3 +1,33 @@
+.rotate-e {
+    transform-origin: 200px 200px;
+    transform: rotate(270deg);
+}
+
+.rotate-nne {
+    transform-origin: 200px 200px;
+    transform: rotate(330deg);
+}
+
+.rotate-nnw {
+    transform-origin: 200px 200px;
+    transform: rotate(30deg);
+}
+
+.rotate-w {
+    transform-origin: 200px 200px;
+    transform: rotate(90deg);
+}
+
+.rotate-ssw {
+    transform-origin: 200px 200px;
+    transform: rotate(150deg);
+}
+
+.rotate-sse {
+    transform-origin: 200px 200px;
+    transform: rotate(210deg);
+}
+
 .tile {
     width: 40px;
     height: 30px;
