@@ -118,6 +118,15 @@ function setActor(tile, actor, markerCompass) {
     tile.setAttribute('class', htmlClass);
 }
 
+function reorient() {
+    document.getElementById("view").className = 'rotate-' + GLOBAL.compass;
+    console.log("Global position:", GLOBAL.position);
+    const x_offset = 175 - GLOBAL.position.x * 26;
+    const y_offset = 180 - GLOBAL.position.y * 42;
+    console.log("Global position:", GLOBAL.position, x_offset, y_offset);
+    document.getElementById("board").style = 'transform: translate(' + x_offset + 'px, ' + y_offset + 'px);';
+}
+
 function onClick(event) {
     let target = event.target;
     let actor = getActor(target);
@@ -178,6 +187,7 @@ function onKey(event) {
         }
         setActor(tile, actor, newCompass);
     }
+    reorient()
 }
 
 function onLoad() {
@@ -216,6 +226,7 @@ function onLoad() {
     // tile.addEventListener('click', onClick);
     GLOBAL.position = normalizePosition({ 'x': 0, 'y': 0 });
     GLOBAL.compass = 'sse';
+    document.getElementById("view").className = 'rotate-' + GLOBAL.compass;
     console.log('Normalized origin:', GLOBAL.position);
     for (let a = 0; a < 360; a += 60) {
         let compass = GLOBAL.angleToCompass[a];
@@ -224,6 +235,7 @@ function onLoad() {
             GLOBAL.position = step(GLOBAL.position, compass);
         }
     }
+    reorient();
 
     document.addEventListener('keydown', onKey);
 }
